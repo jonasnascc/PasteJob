@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Paste Job",
+  "version": "1.0",
+  "description": "Easily save and reuse clipboard content.",
+  "permissions": ["scripting", "activeTab", "clipboardRead", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+      "16": "assets/favicon16.png",
+      "48": "assets/favicon48.png",
+      "128": "assets/favicon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/favicon16.png",
+      "48": "assets/favicon48.png",
+      "128": "assets/favicon128.png"
+    }
+  }
+}

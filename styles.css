@@ -1,0 +1,123 @@
+* {
+    font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    width: 300px;
+    height: 500px;
+    background-color: antiquewhite;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+#text {
+    resize: none;
+    height: 200px;
+}
+
+
+#create_submit_btn, #new_btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    min-height: 35px;
+    font-weight: 600;
+}
+
+#new_btn {
+    background-color: #c57100;
+    color: white;
+}
+
+#new_btn:hover {
+    background-color: #e08b1c;
+}
+
+#new_btn:active {
+    background-color: #96590a;
+}
+
+#create_submit_btn {
+    background-color: #0a742d;
+    color: white;
+}
+
+#notes_list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.notesListItem {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    list-style: none;
+    height: 50px;
+    background-color: white;
+    padding: 0 10px;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+.notesListTitle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.noteDeleteAnchor {
+    text-decoration: none;
+}
+
+footer {
+    min-height: 20px;
+}
+
+.footerActions {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    background-color: antiquewhite;
+    width: calc(100% - 20px);
+    padding: 0 10px;
+}
+
+.footerActions a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.footerActions a:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
